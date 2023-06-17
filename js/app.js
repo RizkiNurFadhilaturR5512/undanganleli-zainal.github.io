@@ -251,6 +251,7 @@ const kirimBalasan = async () => {
     document.getElementById('batal').disabled = false;
     document.getElementById('kirimbalasan').disabled = false;
     document.getElementById('kirimbalasan').innerHTML = tmp;
+    document.getElementById("batal").addEventListener("click", resetForm);
 };
 
 const innerCard = (comment) => {
